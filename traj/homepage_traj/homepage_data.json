@@ -1,0 +1,121 @@
+{
+  "dataset_examples": [
+    {
+      "instance_id": 0,
+      "question": "What is the percentage of missing values in the RBC feature?",
+      "answer": "38%",
+      "dataset": "ckdisease",
+      "notebook": "eda-processing-tutorial",
+      "community": "community_0",
+      "data_path": "data/community_0/full_community"
+    },
+    {
+      "instance_id": 50,
+      "question": "What percentage of rape victims are minors?",
+      "answer": "24%",
+      "dataset": "crime-in-india",
+      "notebook": "eda-in-crime-of-rape-in-india",
+      "community": "community_15",
+      "data_path": "data/community_15/full_community"
+    },
+    {
+      "instance_id": 150,
+      "question": "In the dataset containing city rental price indices, what is the average percentage of missing values during the first year of data?",
+      "answer": "11.56",
+      "dataset": "rent-index",
+      "notebook": "analysis-of-world-crime",
+      "community": "community_40",
+      "data_path": "data/community_40/full_community"
+    },
+    {
+      "instance_id": 500,
+      "question": "Which street has the highest total number of accident records between 2016 and 2020, and what is its average daily count?",
+      "answer": "US/Eastern; 46%",
+      "dataset": "us-states-map",
+      "notebook": "60-insights-extraction-us-accident-analysis",
+      "community": "community_2",
+      "data_path": "data/community_2/full_community"
+    },
+    {
+      "instance_id": 800,
+      "question": "What are the correlation coefficient and R-squared value between lecture count and duration?",
+      "answer": "0.8; 0.64",
+      "dataset": "stopwords-from-ranksnl",
+      "notebook": "eda-of-udemy-courses-focusing-on-subscribers",
+      "community": "community_4",
+      "data_path": "data/community_4/full_community"
+    }
+  ],
+  "trajectories": [
+    {
+      "id": "claude-code-opus-4.7-instance-0",
+      "instance_id": 0,
+      "name": "Instance 0: What is the percentage of missing values in the RBC feature?...",
+      "system": "Claude Code + Opus 4.7",
+      "model": "claude-opus-4.7",
+      "question": "What is the percentage of missing values in the RBC feature?",
+      "path": "/trajectories/claude-code-opus-4.7-instance-0.jsonl",
+      "turns": 7,
+      "cost_usd": 0.1183,
+      "input_tokens": 7,
+      "output_tokens": 971,
+      "cache_read_tokens": 61177
+    },
+    {
+      "id": "claude-code-sonnet-4.6-instance-50",
+      "instance_id": 50,
+      "name": "Instance 50: What percentage of rape victims are minors?...",
+      "system": "Claude Code + Sonnet 4.6",
+      "model": "claude-sonnet-4.6",
+      "question": "What percentage of rape victims are minors?",
+      "path": "/trajectories/claude-code-sonnet-4.6-instance-50.jsonl",
+      "turns": 11,
+      "cost_usd": 0.1025,
+      "input_tokens": 8,
+      "output_tokens": 971,
+      "cache_read_tokens": 152014
+    },
+    {
+      "id": "openhands-gpt-5.5-instance-10",
+      "instance_id": 10,
+      "name": "Instance 10: What is the average number of pregnancies for positive cases...",
+      "system": "OpenHands + GPT-5.5",
+      "model": "gpt-5.5",
+      "question": "What is the average number of pregnancies for positive cases?",
+      "path": "/trajectories/openhands-gpt-5.5-instance-10.jsonl",
+      "turns": 7,
+      "cost_usd": 0.0857,
+      "input_tokens": 22224,
+      "output_tokens": 303,
+      "cache_read_tokens": 16896
+    },
+    {
+      "id": "codex-gpt-5.5-instance-150",
+      "instance_id": 150,
+      "name": "Instance 150: In the dataset containing city rental price indices, what is...",
+      "system": "Codex + GPT-5.5",
+      "model": "gpt-5.5",
+      "question": "In the dataset containing city rental price indices, what is the average percentage of missing values during the first year of data?",
+      "path": "/trajectories/codex-gpt-5.5-instance-150.jsonl",
+      "turns": 5,
+      "cost_usd": 0.2083,
+      "input_tokens": 220617,
+      "output_tokens": 1546,
+      "cache_read_tokens": 205312
+    },
+    {
+      "id": "openhands-deepseek-v4-instance-2",
+      "instance_id": 2,
+      "name": "Instance 2: Calculate the success rate for each marketing campaign accep...",
+      "system": "OpenHands + DeepSeek-V4",
+      "model": "deepseek-v4",
+      "question": "Calculate the success rate for each marketing campaign acceptance indicator and the final response. Before calculation, remove duplicate records and records with negative spending values.",
+      "path": "/trajectories/openhands-deepseek-v4-instance-2.jsonl",
+      "turns": 21,
+      "cost_usd": 0.0452,
+      "input_tokens": 98266,
+      "output_tokens": 2694,
+      "cache_read_tokens": 43648
+    }
+  ]
+}
