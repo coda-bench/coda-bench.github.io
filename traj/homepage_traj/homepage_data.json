@@ -1,49 +1,433 @@
 {
   "dataset_examples": [
     {
-      "instance_id": 0,
-      "question": "What is the percentage of missing values in the RBC feature?",
-      "answer": "38%",
-      "dataset": "ckdisease",
-      "notebook": "eda-processing-tutorial",
-      "community": "community_0",
-      "data_path": "data/community_0/full_community"
+      "instance_id": 43,
+      "community": "community_27",
+      "dataset": "120_years_of_olympic_history",
+      "notebook": "olympic-medals-vs-population",
+      "difficulty": "hard",
+      "question": "Among countries with Medal_points > 5 (Medal_points = Gold·3 + Silver·2 + Bronze·1 per event) in any single Summer Olympic Games after 1993, which country had the highest rate of unique participants per 100,000 people in that specific year? (Use the country's population for that year.)",
+      "answer": "New Zealand; 4.18",
+      "answer_guidelines": "Format: Country Name; Rate. The rate is a number rounded to two decimal places.",
+      "evidence": [
+        "120_years_of_olympic_history_athletes_and_results/source/athlete_events.csv",
+        "world-bank-data-1960-to-2016/source/country_population.csv"
+      ],
+      "filesystem": {
+        "datasets": 119,
+        "files": 8533,
+        "size": "13.0 GB",
+        "fileTypes": [
+          {
+            "ext": "csv",
+            "count": 6195
+          },
+          {
+            "ext": "pdf",
+            "count": 1950
+          },
+          {
+            "ext": "json",
+            "count": 129
+          },
+          {
+            "ext": "png",
+            "count": 46
+          },
+          {
+            "ext": "dbf",
+            "count": 10
+          }
+        ],
+        "tree": [
+          {
+            "depth": 0,
+            "name": "full_community/",
+            "type": "root",
+            "note": "119 datasets · 8,533 files"
+          },
+          {
+            "depth": 1,
+            "name": "120_years_of_olympic_history_athletes_and_results/",
+            "type": "target",
+            "note": "3 files"
+          },
+          {
+            "depth": 2,
+            "name": "source/",
+            "type": "dir"
+          },
+          {
+            "depth": 3,
+            "name": "athlete_events.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "noc_regions.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "dataset-metadata.json",
+            "type": "file"
+          },
+          {
+            "depth": 1,
+            "name": "countries-population/",
+            "type": "decoy",
+            "note": "2 files"
+          },
+          {
+            "depth": 1,
+            "name": "population/",
+            "type": "decoy",
+            "note": "1 file"
+          },
+          {
+            "depth": 1,
+            "name": "population-by-country-2020/",
+            "type": "decoy",
+            "note": "2 files"
+          },
+          {
+            "depth": 1,
+            "name": "world_population/",
+            "type": "decoy",
+            "note": "7 files"
+          },
+          {
+            "depth": 1,
+            "name": "world-population-19602018/",
+            "type": "decoy",
+            "note": "7 files"
+          },
+          {
+            "depth": 1,
+            "name": "world_population_by_countries/",
+            "type": "decoy",
+            "note": "4 files"
+          },
+          {
+            "depth": 1,
+            "name": "gdp-world-bank-data/",
+            "type": "decoy",
+            "note": "17 files — has PopulationPerCountry.csv"
+          },
+          {
+            "depth": 1,
+            "name": "health-nutrition-and-population-statistics/",
+            "type": "decoy",
+            "note": "2 files"
+          },
+          {
+            "depth": 1,
+            "name": "… 109 more datasets",
+            "type": "ellipsis"
+          },
+          {
+            "depth": 1,
+            "name": "world-bank-data-1960-to-2016/",
+            "type": "target",
+            "note": "4 files"
+          },
+          {
+            "depth": 2,
+            "name": "source/",
+            "type": "dir"
+          },
+          {
+            "depth": 3,
+            "name": "country_population.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "fertility_rate.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "life_expectancy.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "dataset-metadata.json",
+            "type": "file"
+          }
+        ]
+      }
     },
     {
-      "instance_id": 50,
-      "question": "What percentage of rape victims are minors?",
-      "answer": "24%",
-      "dataset": "crime-in-india",
-      "notebook": "eda-in-crime-of-rape-in-india",
-      "community": "community_15",
-      "data_path": "data/community_15/full_community"
+      "instance_id": "c26-amazon",
+      "community": "community_26",
+      "dataset": "amazon_products_dataset",
+      "notebook": "amazon-product-discount-analysis",
+      "difficulty": "medium",
+      "question": "Which product categories have the lowest and highest average discount rates, and what are these values?",
+      "answer": "home, kitchen, pets; 18.31; women's clothing; 59.61",
+      "answer_guidelines": "Format: lowest category; lowest value; highest category; highest value. Discount values rounded to two decimals.",
+      "evidence": [
+        "amazon_products_dataset/source/Amazon-Products.csv"
+      ],
+      "filesystem": {
+        "datasets": 161,
+        "files": 1542,
+        "size": "12.6 GB",
+        "fileTypes": [
+          {
+            "ext": "csv",
+            "count": 1052
+          },
+          {
+            "ext": "json",
+            "count": 161
+          },
+          {
+            "ext": "txt",
+            "count": 149
+          },
+          {
+            "ext": "shp",
+            "count": 23
+          },
+          {
+            "ext": "dbf",
+            "count": 22
+          }
+        ],
+        "tree": [
+          {
+            "depth": 0,
+            "name": "full_community/",
+            "type": "root",
+            "note": "161 datasets · 1,542 files"
+          },
+          {
+            "depth": 1,
+            "name": "amazon_products_dataset/",
+            "type": "target",
+            "note": "141 files"
+          },
+          {
+            "depth": 2,
+            "name": "source/",
+            "type": "dir"
+          },
+          {
+            "depth": 3,
+            "name": "Amazon-Products.csv",
+            "type": "evidence",
+            "note": "180 MB — the consolidated file"
+          },
+          {
+            "depth": 3,
+            "name": "Air Conditioners.csv",
+            "type": "file",
+            "note": "per-category — decoy"
+          },
+          {
+            "depth": 3,
+            "name": "All Books.csv",
+            "type": "file",
+            "note": "per-category — decoy"
+          },
+          {
+            "depth": 3,
+            "name": "All Electronics.csv",
+            "type": "file",
+            "note": "per-category — decoy"
+          },
+          {
+            "depth": 3,
+            "name": "All Grocery and Gourmet Foods.csv",
+            "type": "file",
+            "note": "per-category — decoy"
+          },
+          {
+            "depth": 3,
+            "name": "… 135 more per-category CSV files",
+            "type": "ellipsis"
+          },
+          {
+            "depth": 1,
+            "name": "unlock-profits-with-e-commerce-sales-data/",
+            "type": "decoy",
+            "note": "similar theme"
+          },
+          {
+            "depth": 1,
+            "name": "online-retail-ii-uci/",
+            "type": "decoy",
+            "note": "2 files"
+          },
+          {
+            "depth": 1,
+            "name": "bigmart-sales/",
+            "type": "decoy",
+            "note": "sales — decoy"
+          },
+          {
+            "depth": 1,
+            "name": "vehicle-sales-data/",
+            "type": "decoy",
+            "note": "1 file"
+          },
+          {
+            "depth": 1,
+            "name": "yelpamazonimdb/",
+            "type": "decoy",
+            "note": "similar name"
+          },
+          {
+            "depth": 1,
+            "name": "… 154 more datasets",
+            "type": "ellipsis"
+          }
+        ]
+      }
     },
     {
-      "instance_id": 150,
-      "question": "In the dataset containing city rental price indices, what is the average percentage of missing values during the first year of data?",
-      "answer": "11.56",
-      "dataset": "rent-index",
-      "notebook": "analysis-of-world-crime",
-      "community": "community_40",
-      "data_path": "data/community_40/full_community"
-    },
-    {
-      "instance_id": 500,
-      "question": "Which street has the highest total number of accident records between 2016 and 2020, and what is its average daily count?",
-      "answer": "US/Eastern; 46%",
-      "dataset": "us-states-map",
-      "notebook": "60-insights-extraction-us-accident-analysis",
-      "community": "community_2",
-      "data_path": "data/community_2/full_community"
-    },
-    {
-      "instance_id": 800,
-      "question": "What are the correlation coefficient and R-squared value between lecture count and duration?",
-      "answer": "0.8; 0.64",
-      "dataset": "stopwords-from-ranksnl",
-      "notebook": "eda-of-udemy-courses-focusing-on-subscribers",
-      "community": "community_4",
-      "data_path": "data/community_4/full_community"
+      "instance_id": 19,
+      "community": "community_49",
+      "dataset": "brazilian_ecommerce",
+      "notebook": "olist-marketing-and-reviews",
+      "difficulty": "hard",
+      "question": "Among the top 20 product categories by order volume, which category has the highest percentage of 5-star reviews, and what is that percentage?",
+      "answer": "Perfumery; 64.1%",
+      "answer_guidelines": "Format: Category Name; Percentage%. Use the English category translation. Round to one decimal.",
+      "evidence": [
+        "brazilian_ecommerce/source/olist_orders_dataset.csv",
+        "brazilian_ecommerce/source/olist_order_items_dataset.csv",
+        "brazilian_ecommerce/source/olist_products_dataset.csv",
+        "brazilian_ecommerce/source/olist_order_reviews_dataset.csv",
+        "brazilian_ecommerce/source/product_category_name_translation.csv"
+      ],
+      "filesystem": {
+        "datasets": 7,
+        "files": 25,
+        "size": "0.3 GB",
+        "fileTypes": [
+          {
+            "ext": "csv",
+            "count": 17
+          },
+          {
+            "ext": "json",
+            "count": 7
+          },
+          {
+            "ext": "sqlite",
+            "count": 1
+          }
+        ],
+        "tree": [
+          {
+            "depth": 0,
+            "name": "full_community/",
+            "type": "root",
+            "note": "7 datasets · 25 files"
+          },
+          {
+            "depth": 1,
+            "name": "brazilian_ecommerce/",
+            "type": "target",
+            "note": "10 files"
+          },
+          {
+            "depth": 2,
+            "name": "source/",
+            "type": "dir"
+          },
+          {
+            "depth": 3,
+            "name": "olist_orders_dataset.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "olist_order_items_dataset.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "olist_products_dataset.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "olist_order_reviews_dataset.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "product_category_name_translation.csv",
+            "type": "evidence"
+          },
+          {
+            "depth": 3,
+            "name": "olist_customers_dataset.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "olist_sellers_dataset.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "olist_geolocation_dataset.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "olist_order_payments_dataset.csv",
+            "type": "file"
+          },
+          {
+            "depth": 3,
+            "name": "dataset-metadata.json",
+            "type": "file"
+          },
+          {
+            "depth": 1,
+            "name": "marketing-funnel-olist/",
+            "type": "decoy",
+            "note": "3 files — Olist, wrong scope"
+          },
+          {
+            "depth": 1,
+            "name": "olist-order-reviews-translated/",
+            "type": "decoy",
+            "note": "2 files — Olist variant"
+          },
+          {
+            "depth": 1,
+            "name": "e_commerce_dataset_by_olist_as_an_sqlite_database/",
+            "type": "decoy",
+            "note": "SQLite mirror"
+          },
+          {
+            "depth": 1,
+            "name": "bank-customer-segmentation/",
+            "type": "decoy",
+            "note": "2 files"
+          },
+          {
+            "depth": 1,
+            "name": "brazilian-cities/",
+            "type": "decoy",
+            "note": "4 files"
+          },
+          {
+            "depth": 1,
+            "name": "feriados-e-dias-da-semana-brasil/",
+            "type": "decoy",
+            "note": "2 files"
+          }
+        ]
+      }
     }
   ],
   "trajectories": [
